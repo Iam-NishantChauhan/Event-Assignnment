@@ -1,0 +1,241 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .exploreEventPage {
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  
+  .exploreHeader {
+    display: flex;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .eventDetails {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .eventName {
+    font-size: 38px;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .eventTiming {
+    display: flex;
+    flex-direction: start;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+  }
+  
+  .eventCont1,
+  .eventCont2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .eventCont2 h3 {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+  
+  .eventCont3 {
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    text-wrap: wrap;
+  }
+  
+  .eventTiming .locationIcon {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  
+  .eventTiming p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 5px;
+  }
+  
+  .artistSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .artistSection h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .artistContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .artistContainer .topImage {
+    width: 150px;
+    height: 170px;
+    margin-bottom: -50px;
+    position: absolute;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .artistContainer .bottomImages {
+    display: flex;
+    gap: 65px;
+    margin-top: 80px;
+  }
+  
+  .artistContainer .bottomImages img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .artistSection img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 20px;
+    bottom: 0;
+  }
+  
+  .footerContainer button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: rgb(234, 164, 176);
+    border-radius: 50px;
+    color: white;
+    font-weight: 800;
+  }
+  
+  .footerContainer img {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+  }
+  
+  
+  /* responsive style */
+  
+  /* tablet */
+  
+  @media (max-width:768px) {
+    .exploreEventPage{
+      width: 50%;
+    }
+  
+    .exploreHeader{
+      font-size: 20px;
+    }
+  
+    .eventName{
+      font-size: 30px;
+    }
+  
+    .eventTiming .eventCont1 p{
+      font-size: 13px;
+      font-weight: 600;
+    }
+  
+    .eventCont3{
+      font-size: 18px;
+    }
+  
+  
+  .artistSection h1{
+    font-size: 15px;
+  }
+  
+  .artistContainer .topImage{
+    width: 90px;
+    height: 90px;
+  }
+  
+  .artistContainer .bottomImages {
+    gap: 10px;
+    margin-top: 70px;
+  }
+  
+  .artistContainer .bottomImages img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .footerContainer img{
+    height: 40px;
+    width: 40px;
+  }
+  
+  .footerContainer button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  }
+  
+  @media (max-width:1024px){
+    .exploreEventPage{
+      width: 40%;
+    }
+  }
+  
+  /*extra- made responsive for smaller screens */
+  @media (max-width: 480px) {
+    .exploreEventPage {
+      width: 80%;
+    }
+  
+    .eventName {
+      font-size: 24px; 
+    }
+  
+    .eventTiming p {
+      font-size: 16px; 
+    }
+  
+    .eventCont2 h3 {
+      font-size: 10px; 
+    }
+  
+    .artistSection h1 {
+      font-size: 18px; 
+    }
+  
+    .artistContainer .topImage, .artistContainer .bottomImages img {
+      width: 100px; 
+      height: 100px;
+    }
+  }

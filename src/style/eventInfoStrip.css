@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@keyframes verticalScroll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.eventInfoStrip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; 
+  background-color: rgb(185, 185, 229); 
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.verticalStrip {
+  display: flex;
+  flex-direction: column;
+  animation: verticalScroll 5s linear infinite;
+}
+
+.verticalStrip h1 {
+  margin: 0;
+  font-family: 'Krona One',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0;
+  writing-mode: vertical-rl; /* Rotate text for vertical reading */
+  text-orientation: mixed; 
+}
+
+.verticalStrip p{
+  margin: 0;
+  padding: 10px 0; /* Reduced padding for less gap */
+  text-align: center;
+  font-size: 40px;
+}
+
+/* responsive style */
+@media (max-width: 786px){
+  .eventInfoStrip {
+    width: 8%;
+  }
+
+  .verticalStrip h1{
+    font-size: 20px;
+  }
+
+  .verticalStrip p{
+    font-size: 15px;
+  }
+}
